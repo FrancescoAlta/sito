@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deadlock - NovaCore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Deadlock</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sequenziale-parallelo.html">Sequenziale vs Parallelo</a></li>
+        <li><a href="concorrente.html">Concorrente</a></li>
+        <li><a href="grafi-precedenze.html">Grafi delle Precedenze</a></li>
+        <li><a href="fork-join.html">Fork-Join</a></li>
+        <li><a href="cobegin-coend.html">Cobegin-Coend</a></li>
+        <li><a href="deadlock.html">Deadlock</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Cos'è il Deadlock</h2>
+      <p>
+        Il <strong>deadlock</strong> indica quelle situazioni nelle quali due (o più) processi si ostacolano a vicenda impedendosi reciprocamente di portare a termine il proprio lavoro.
+      </p>
+
+      <h2>Condizioni di Coffman</h2>
+      <p>Affinché si verifichi un deadlock, devono esistere contemporaneamente queste quattro condizioni:</p>
+      <ul>
+        <li><strong>Mutua esclusione</strong>: una risorsa può essere utilizzata da un solo processo alla volta.</li>
+        <li><strong>Assenza di prelascio</strong>: una risorsa non può essere forzatamente tolta a un processo che la sta utilizzando.</li>
+        <li><strong>Richieste bloccanti</strong>: un processo che detiene già delle risorse può richiederne altre.</li>
+        <li><strong>Attesa circolare</strong>: esiste una catena di due o più processi, ciascuno dei quali è in attesa di una risorsa detenuta dal processo successivo della catena.</li>
+      </ul>
+
+      <h2>Strategie di Gestione</h2>
+      <ul>
+        <li><strong>Detection e recovery</strong>: rilevare quando si verifica un deadlock e intraprendere azioni per risolverlo.</li>
+        <li><strong>Avoidance (Prevenzione)</strong>: evitare che si verifichi un deadlock in primo luogo.</li>
+        <li><strong>Prevention</strong>: impedire il verificarsi delle condizioni di Coffman.</li>
+        <li><strong>Ignorare il problema</strong>: in alcuni sistemi, specialmente quelli dove i deadlock sono rari e costosi da rilevare, si può scegliere di non gestirli affatto.</li>
+      </ul>
+
+      <img src="deadlock.png" alt="Esempio: Filosofi" width="300">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NovaCore Team - Tutti i diritti riservati</p>
+  </footer>
+
+</body>
+</html>

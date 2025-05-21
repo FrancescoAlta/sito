@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grafi delle Precedenze - NovaCore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Grafi delle Precedenze</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sequenziale-parallelo.html">Sequenziale vs Parallelo</a></li>
+        <li><a href="concorrente.html">Concorrente</a></li>
+        <li><a href="grafi-precedenze.html">Grafi delle Precedenze</a></li>
+        <li><a href="fork-join.html">Fork-Join</a></li>
+        <li><a href="cobegin-coend.html">Cobegin-Coend</a></li>
+        <li><a href="deadlock.html">Deadlock</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Cos'è un grafo delle precedenze</h2>
+      <p>
+        Un <strong>grafo delle precedenze</strong> è uno strumento grafico utilizzato per descrivere l'ordine con cui devono essere eseguite le istruzioni o le attività di un processo. 
+        È particolarmente utile nell'elaborazione concorrente, dove l'ordine delle operazioni non è sempre strettamente sequenziale.
+      </p>
+
+      <h3>A cosa serve?</h3>
+      <p>
+        Serve a:
+        <ul>
+          <li>rappresentare le <strong>dipendenze</strong> tra le operazioni,</li>
+          <li>stabilire un <strong>ordinamento parziale</strong> delle istruzioni,</li>
+          <li>identificare quali attività possono essere eseguite <strong>in parallelo</strong>,</li>
+          <li>ottimizzare la pianificazione e l'esecuzione dei task in un sistema multiprogrammato o multithread.</li>
+        </ul>
+      </p>
+
+      <h3>Simboli principali</h3>
+      <ul>
+        <li><strong>Ovale:</strong> rappresenta un'attività (singola o sequenza di istruzioni).</li>
+        <li><strong>Freccia:</strong> indica una <em>precedenza</em> tra due operazioni (una deve essere eseguita prima dell'altra).</li>
+      </ul>
+
+      <h3>Spazio per esempio</h3>
+      <p>Inserisci qui sotto un esempio grafico esportato da Figma o altro software:</p>
+      <img src="grafo.png" alt="Esempio grafo delle precedenze" style="max-width:100%; height:auto;">
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NovaCore Team - Tutti i diritti riservati</p>
+  </footer>
+
+</body>
+</html>
